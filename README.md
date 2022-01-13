@@ -22,7 +22,7 @@
                       Connector Clip Orientation -->
                       +--------+
                  X-S  |1*     6|  TH1+ (PC1)
-          TH1- (PC1)  |2      7|  J1- (12/24v)
+      TH1-/X-G (PC1)  |2      7|  J1- (12/24v)
          HE0+ (PF10)  |3      8|  PB1- (FAN)
          HE0+ (PF10)  |4      9|  HE0- (PF10)
          HE0+ (PF10)  |5     10|  HE0- (PF10)
