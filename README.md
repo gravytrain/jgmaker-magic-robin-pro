@@ -12,7 +12,6 @@
 1.  Label all the wires as you remove them from the hotend connector.
 2.  Fan connections only have a negative wire.
 3.  The X-Endstop Ground wire is shared with the TH1- wire. If you reverse the TH1 - and + wires you will throw a thermal error when you trigger the X-Endstop connection.  Fix by reversing the TH1 wires.
-4. 
 ### Mounting the board
 
 1. Included in this project is a very basic mount 'MKS_Robin_Pro_Mount.stl'.  The board is mounted offset from the original alignment because the USB and Card slots cant align with this board.  There is enough offset to connect a usb cable and be able to slide the SD Card in and out of the slot.
@@ -34,6 +33,9 @@
 2. Connect both Black Wires together into PA0+.
 3. Connect the two remaining White wires to TB(PC0) for Bed Thermistor ( you will need to extend the length of these two wires so that the bed can freely move back and forth without pulling these wires tight).
 
+### UART Board Jumpers
+
+![Uart Board Jumpers](https://github.com/gravytrain/jgmaker-magic-robin-pro/blob/main/uart-pins.png?raw=true)
 ## Current Status
 This version of the firmware is based from the 2.0.7.2 Version of Marlin. 
 
