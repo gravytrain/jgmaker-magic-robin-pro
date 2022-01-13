@@ -36,16 +36,3 @@
 ### UART Board Jumpers
 
 ![Uart Board Jumpers](https://github.com/gravytrain/jgmaker-magic-robin-pro/blob/main/uart-pins.png?raw=true)
-## Current Status
-This version of the firmware is based from the 2.0.7.2 Version of Marlin. 
-
-## Getting the Upstream Marlin
-There are some instructions here for setting your repository with the upstream Marlin Source. 
-https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork
-
-$ git remote add upstream https://github.com/MarlinFirmware/Configurations.git
-
-Thie will set an upstream remote that you can fetch and merge from. 
-
-#Join the Community
-[Checkout our Discord Server](https://discord.gg/H97VgdSwjF)
