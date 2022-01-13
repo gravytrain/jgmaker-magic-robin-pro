@@ -1,26 +1,43 @@
-# Firmware For JGMaker Artist-D
+# Firmware For JGMaker Magic with MKS Robin Pro Board
 ![GitHub](https://img.shields.io/github/license/JGMaker3dofficial/artistd.svg)
-![GitHub contributors](https://img.shields.io/github/contributors/JGMaker3dofficial/artistd.svg)
-![GitHub Release Date](https://img.shields.io/github/release-date/JGMaker3dofficial/artistd.svg)
+## Official JGMaker ArtistD Firmware 
+* Get the latest release of the Official Firmware: https://github.com/JGMaker3dofficial/artistd/releases/latest
+## Official JGMaker Magic Firmware 
+* Get the Official Firmware: https://github.com/JGMaker3dofficial/magic
+## MKS Robin Pro Pinouts
+[MKS Robin Pro Pinout](https://github.com/makerbase-mks/MKS-Robin-Pro/blob/master/hardware/MKS%20Robin%20Pro%20V1.0_001/MKS%20Robin%20Pro%20V1.0_001%20PIN.pdf)
 
-## Official Firmware 
-* Get the inital release of the Official Firmware: https://github.com/JGMaker3dofficial/artistd/releases/tag/1.1.2
+## Setting up the new board
 
-## Pre-Release of Official Firmware
-These are pre-releases driven by the community in conjunction with JGMaker.  Beta Releases are not officially supported; yet. 
-* [v2021.4-beta](https://github.com/JGMaker3dofficial/artistd/releases/tag/v2021.4-beta) - [Download v2021.4-beta] (https://github.com/JGMaker3dofficial/artistd/releases/download/v2021.4-beta/Robin_pro.bin)
-* [v2021.3-2.0.6-beta](https://github.com/JGMaker3dofficial/artistd/releases/tag/v2021.3-beta) - [Download v2021.3-2.0.6] (https://github.com/JGMaker3dofficial/artistd/releases/download/v2021.3-beta/Robin_pro.bin)
-* [v1.1.5-beta](https://github.com/JGMaker3dofficial/artistd/releases/tag/v1.1.5-beta) - [Download v1.1.5-beta](https://github.com/JGMaker3dofficial/artistd/releases/download/v1.1.5-beta/Robin_pro.bin)
-* [v1.1.4-beta](https://github.com/JGMaker3dofficial/artistd/releases/tag/v1.1.4-beta)
+1.  Label all the wires as you remove them from the hotend connector.
+2.  Fan connections only have a negative wire.
+3.  The X-Endstop Ground wire is shared with the TH1- wire. If you reverse the TH1 - and + wires you will throw a thermal error when you trigger the X-Endstop connection.  Fix by reversing the TH1 wires.
+4. 
+### Mounting the board
 
-## Community Firmware
-These are dedicated members of the Artist-D community, These version of firmware are not supported 
-* https://github.com/mikejr83/Marlin-ArtistD/releases/
+1. Included in this project is a very basic mount 'MKS_Robin_Pro_Mount.stl'.  The board is mounted offset from the original alignment because the USB and Card slots cant align with this board.  There is enough offset to connect a usb cable and be able to slide the SD Card in and out of the slot.
+2. Attach the board to the mount using (4) M3x8mm Screws with M3 nuts on the back.
+3. Use 3 old board screws to secure the mount to the frame. The 4th hole under the new board will remain unattached, but doesnt affect the secureness of the mount.
+### Hotend Pinout
+                      Connector Clip Orientation -->
+                      +--------+
+                 X-S  |1*     6|  TH1+ (PC1)
+          TH1- (PC1)  |2      7|  J1- (12/24v)
+         HE0+ (PF10)  |3      8|  PB1- (FAN)
+         HE0+ (PF10)  |4      9|  HE0- (PF10)
+         HE0+ (PF10)  |5     10|  HE0- (PF10)
+                      +--------+
+             
+### Bed Pinout
 
-# Curent Status
-This version of the firmware is based from the 2.0.0 Version of Marlin. 
+1. Connect both Red Wires together into PA0-.
+2. Connect both Black Wires together into PA0+.
+3. Connect the two remaining White wires to TB(PC0) for Bed Thermistor ( you will need to extend the length of these two wires so that the bed can freely move back and forth without pulling these wires tight).
 
-## Getting the Upstram Marlin
+## Current Status
+This version of the firmware is based from the 2.0.7.2 Version of Marlin. 
+
+## Getting the Upstream Marlin
 There are some instructions here for setting your repository with the upstream Marlin Source. 
 https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork
 

@@ -170,6 +170,7 @@
 
   #define E2_SERIAL_TX_PIN                  PC13
   #define E2_SERIAL_RX_PIN                  PG9
+  #define TMC_BAUD_RATE 19200
 #endif
 
 //
@@ -261,8 +262,8 @@
   #define BTN_ENC                           PG2
   #define LCD_PINS_ENABLE                   PG0
   #define LCD_PINS_RS                       PG1
-  #define BTN_EN1                           PG5
-  #define BTN_EN2                           PG4
+  #define BTN_EN1                           PF12
+  #define BTN_EN2                           PF13
 
   // MKS MINI12864 and MKS LCD12864B. If using MKS LCD12864A (Need to remove RPK2 resistor)
   #if ENABLED(MKS_MINI_12864)
